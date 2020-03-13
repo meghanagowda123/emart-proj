@@ -1,0 +1,62 @@
+<div class="container paddingContact-container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="white">Let's Get Started!</h1>
+        
+      </div>
+    </div>
+  </div>
+  <div class="parallax texture" id="parallax-cta" style="background-image:url(https://www.solodev.com/assets/hero-slider/slide1.jpg);"></div>
+  <!-- contact-form -->
+  <div class="container form">
+    <div class="row">
+      <div class="col-md-7">
+        <div class="row">
+          <div class="form-group col-md-12">
+            
+            <p style="color: #000">Any Questions? Do not hesitate to Contact us </p>
+          </div>
+        </div>
+        <form name="contactForm" id="contactForm" (ngSubmit)="onSubmit()">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="control-group">
+                <label> Name</label>
+                <input type="text" class="demo-default form-control" placeholder="Name" [(ngModel)]="contact.name"/>
+              </div>
+          
+              <div class="control-group">
+                <label>Query</label>
+                <input type="text" class="demo-default form-control" placeholder="Company" [(ngModel)]="contact.query"/>
+              </div>
+              <div class="control-group">
+                <label>Phone</label>
+                <input type="text" class="demo-default form-control" placeholder="Phone " [(ngModel)]="contact.phone"/>
+              </div>
+              <div class="control-group">
+                <label>Email</label>
+                <input type="text" class="demo-default form-control" placeholder="yourname@domain.com" [(ngModel)]="contact.emailId"/>
+              </div>
+              
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="form-group col-md-12 text-center">
+              <button type="submit" (click)="ngSubmit" >Ping Us</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-5 contact-right-info">
+        <h2>Alchemy Solutions</h2>
+        <p style="color: #000000">Behind RXDX hsopital<br />
+          Whitefield<br />
+          <a href="tel:0444567283">044.456.7283</a>
+        </p>
+        <h2>EMAIL ADDRESS</h2>
+        <a href="mailto:info@webcorpco.com">contact@emart.com</a>
+      </div>
+    </div>
+  </div>
+  
